@@ -13,5 +13,5 @@ var (
 
 func main() {
 	a = false
-	fmt.Println(f)
+	fmt.Println(a)
 }
