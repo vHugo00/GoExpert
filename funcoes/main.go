@@ -12,6 +12,8 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(valor)
+
+	fmt.Println(concatName("Vitor", "Hugo", 21))
 }
 
 func sum(a, b int) (int, error) {
@@ -19,4 +21,8 @@ func sum(a, b int) (int, error) {
 		return 0, errors.New("A SOMA É MAIOR QUE 50")
 	}
 	return a + b, nil
+}
+
+func concatName(name, sobrenome string, idade int) (string, int) {
+	return name + " " + sobrenome, idade
 }
